@@ -8,15 +8,15 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <Navbar>
+        <Navbar bg="light" expand="lg">
           <Navbar.Brand>
-            <Link to="/">Home</Link>
+            <Link className="navbar-brand" to="/">Home</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Item>
-                <Link to="/login">Login</Link>
+                <Link className="nav-link" to="/login">Login</Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
